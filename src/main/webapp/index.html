@@ -2,33 +2,46 @@
 <html ng-app="scheduler">
 <header>
 
-    <!-- libs -->
-    <script src="/idp.content/assets/lib/jquery/dist/jquery.min.js"></script>
-    <script src="/idp.content/assets/lib/angular/angular.js"></script>
-    <script src="/idp.content/assets/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="/idp.content/assets/lib/angular-translate/angular-translate.min.js"></script>
-    <script src="/idp.content/assets/lib/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.min.js"></script>
-    <script src="/idp.content/assets/lib/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="/idp.content/assets/lib/angular-dialog-service/dist/dialogs.js"></script>
-    <script src="/idp.content/assets/lib/tg-angular-validator/dist/angular-validator.js"></script>
-    <script src="/idp.content/assets/lib/angular-dynamic-locale/tmhDynamicLocale.min.js"></script>
-    <script src="/idp.content/assets/lib/messageformat/messageformat.js"></script>
-    <script src="/idp.content/assets/lib/messageformat/locale/en.js"></script>
-    <script src="/idp.content/assets/lib/messageformat/locale/de.js"></script>
-    <script src="/idp.content/assets/lib/restangular/dist/restangular.min.js"></script>
-    <script src="/idp.content/assets/lib/underscore/underscore.js"></script>
-    <script src="/idp.content/assets/lib/ng-infinite-scroller-origin/build/ng-infinite-scroll.min.js"></script>
-    <script src="/idp.content/assets/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-    <script src="/idp.content/assets/lib/Cookies/dist/cookies.min.js"></script>
-    <script src="/idp.content/assets/lib/angular-ui-select/dist/select.js"></script>
-    <script src="/idp.content/assets/lib/ng-file-upload/ng-file-upload.min.js"></script>
-    <script src="/idp.content/assets/lib/ng-idle/angular-idle.min.js"></script>
-    <script src="/idp.content/assets/lib/angular-block-ui/dist/angular-block-ui.js"></script>
-    <script src="/idp.content/assets/lib/angular-utf8-base64/angular-utf8-base64.min.js"></script>
-    <script src="/idp.content/assets/lib/angular-pretty-xml/src/angular-pretty-xml.js"></script>
+	<title>Scheduler</title>
 
+	<link rel="stylesheet" href="/lib/angular-ui-select/dist/select.min.css">
+    <link rel="stylesheet" href="/lib/angular-block-ui/dist/angular-block-ui.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- libs -->
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/lib/angular-translate/angular-translate.min.js"></script>
+    <script src="/lib/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.min.js"></script>
+    <script src="/lib/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/lib/angular-dialog-service/dist/dialogs.js"></script>
+    <script src="/lib/tg-angular-validator/dist/angular-validator.js"></script>
+    <script src="/lib/angular-dynamic-locale/tmhDynamicLocale.min.js"></script>
+    <script src="/lib/messageformat/messageformat.js"></script>
+    <script src="/lib/messageformat/locale/en.js"></script>
+    <script src="/lib/messageformat/locale/de.js"></script>
+    <script src="/lib/restangular/dist/restangular.min.js"></script>
+    <script src="/lib/underscore/underscore.js"></script>
+    <script src="/lib/ng-infinite-scroller-origin/build/ng-infinite-scroll.min.js"></script>
+    <script src="/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/lib/Cookies/dist/cookies.min.js"></script>
+    <script src="/lib/angular-ui-select/dist/select.js"></script>
+    <script src="/lib/ng-file-upload/ng-file-upload.min.js"></script>
+    <script src="/lib/ng-idle/angular-idle.min.js"></script>
+    <script src="/lib/angular-block-ui/dist/angular-block-ui.js"></script>
+    <script src="/lib/angular-utf8-base64/angular-utf8-base64.min.js"></script>
+    <script src="/lib/angular-pretty-xml/src/angular-pretty-xml.js"></script>
+    
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/states.js"></script>
+    
+ 	<!-- ctrl js -->
+    <script src="app/components/root/rootCtrl.js"></script>
+    
 </header>
-<body>
+<body ng-controller="RootCtrl" ng-cloak>
 <h2>Hello World!</h2>
 </body>
 </html>
